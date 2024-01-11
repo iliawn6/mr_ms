@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR or MS?</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="main_content">
+            <form action="" class="user_form1">
+                <div class="mr_ms">
+                    <h1 class="form_title">Mr. or Ms.?</h1>
+                    <div class="form_inputs">
+                        <div class="input_name">
+                            <input type="text" placeholder="enter name" required class="name_box" name="name_box"
+                                id="name_input_box">
+                        </div>
+                        <div class="gender_box">
+                            <input type="radio" name="gender" id="male_button" class="male_radio">
+                            <label for="male">male</label><br>
+                            <input type="radio" name="gender" id="female_button" class="female_radio">
+                            <label for="female">female</label><br>
+                        </div>
+                    </div>
+                    <div class="form_buttons">
+                        <input type="button" value="submit" class="submit_button" id="submit_button"><br>
+                        <input type="button" value="save" class="save_button" id="save_button"><br>
+                    </div>
+                </div>
+            </form>
+            <form action="" class="user_form2">
+                <div class="result">
+                    <div class="prediction">
+                        <h1 class="prediction_title">Prediction:</h1>
+                        <P name="result" class="prediction_result" id="prediction_result">PLACE FOR PREDICTION</P>
+                    </div>
+                    <div class="saved_answer">
+                        <h1 class="saved_answer_title">Saved Answer:</h1>
+                        <p name="saved_answer_result" class="prediction_result" id="saved_answer">PLACE FOR SAVED ANSWER
+                        </p>
+                        <input type="button" name="clear_saved_answer" value="clear" id="clear_button"
+                            class="clear_button"><br>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

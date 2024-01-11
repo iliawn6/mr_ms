@@ -1,0 +1,146 @@
+:root {
+    --white-color: rgba(255, 255, 255, 0.7);
+}
+
+/* set background image */
+body {
+    background-image: url(assets/images/jonatan-pie-3l3RwQdHRHg-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* putting main content in center of the page using grid display and other attributes*/
+.container {
+    position: relative;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* setting up main content structure. determine display type, border properties and padding */
+.main_content {
+    display: flex;
+    position: relative;
+    /* background-color: rgba(49, 49, 106, 0.7); */
+    border: 0.3rem solid rgb(238, 238, 238);
+    padding: 3.5rem 4.5rem;
+    color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    backdrop-filter: blur(16px);
+}
+
+
+
+
+/* draw a line between form and results (prediction and saved answer) */
+.mr_ms {
+    border-right: 0.3rem solid rgb(238, 238, 238);
+    padding: 2rem;
+}
+
+/* cursor pointer for radio buttons */
+.male_radio,
+.female_radio {
+    cursor: pointer;
+}
+
+/* title of form styles */
+.form_title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* grid display for input form (contains name input and radio buttons) */
+.form_inputs {
+    display: grid;
+    row-gap: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+/* placeholder font and color */
+::placeholder {
+    color: rgba(130, 124, 124, 0.886);
+    font-size: 0.9rem;
+}
+
+/* name input box styles */
+.name_box {
+    padding: 1rem;
+    border: 2px solid rgba(164, 157, 157, 0.886);
+    border-radius: 4rem;
+    background: none;
+    color: rgb(148, 144, 138);
+}
+
+/* name input box on focus border and color */
+.name_box:focus {
+    border: 2px solid rgba(142, 140, 140, 0.886);
+    color: var(--white-color);
+
+}
+
+/* submit and save button (flex display) */
+.form_buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* prediction and saved answer (grid display) */
+.result {
+    display: grid;
+    padding: 2rem;
+    padding-left: 3rem;
+}
+
+/* saved answer grid display */
+.saved_answer {
+    padding-top: 2.8rem;
+    display: grid;
+}
+
+/* clear button styles */
+.clear_button {
+    padding: 1rem;
+    background-color: var(--white-color);
+    font-weight: 500;
+    cursor: pointer;
+    border: var(--white-color);
+    border-radius: 4rem;
+}
+
+/* submit and save button styles */
+.submit_button,
+.save_button {
+    padding: 1rem;
+    margin-right: .5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+    font-weight: 500;
+    cursor: pointer;
+    border: var(--white-color);
+    border-radius: 4rem;
+}
+
+/* buttons in hover styles */
+.submit_button:hover,
+.save_button:hover,
+.clear_button:hover {
+    background-color: rgba(173, 167, 167, 0.886);
+    transition: 0.2s;
+
+}
+
+/*  buttons in active mode styles  */
+.submit_button:active,
+.save_button:active,
+.clear_button:active {
+    background-color: rgba(185, 231, 69, 0.886);
+    transition: 0s;
+}
